@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Chat Apps
+{% endblock %}
+
+{% block body %}
+	<h1>Chat Application</h1>
+
+	<ul>
+		<li class="form-group">
+			<a href="{{ url_for('my_channels') }}">My Channels</a>
+		</li>
+
+		<li class="form-group">
+			<a href="{{ url_for('others_channels') }}">Others Channels</a>
+		</li>
+
+		<li class="form-group">
+			<a href="{{ url_for('logout') }}">Log Out</a>
+		</li>
+	</ul>
+{% endblock %}
